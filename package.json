@@ -1,0 +1,43 @@
+{
+  "name": "@questionto/react",
+  "version": "1.0.6",
+  "private": false,
+  "description": "Easily embed Question.to into your React app.",
+  "homepage": "https://question.to",
+  "repository": "https://github.com/question-to/questionto-react",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
+  "main": "dist/questionto.js",
+  "module": "dist/questionto.module.js",
+  "unpkg": "dist/questionto.umd.js",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "yarn run build",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "files": [
+    "dist",
+    "src",
+    "tsconfig.json"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@loomhq/record-sdk-supported": "^2.21.4",
+    "@types/react": "^16.9.49",
+    "microbundle": "^0.14.2",
+    "prettier": "2.1.2",
+    "pretty-quick": "^3.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "engines": {
+    "node": ">=10.16.0"
+  }
+}
