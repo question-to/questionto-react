@@ -1,6 +1,6 @@
 {
   "name": "@questionto/react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "description": "Easily embed Question.to into your React app.",
   "homepage": "https://question.to",

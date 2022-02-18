@@ -10,11 +10,12 @@ type Props = {
   children?: ReactElement | ((props: object) => ReactElement),
   userId?: string,
   theme?: string,
+  devMode: boolean
 }
 
 //Export main QuestionTo function
 export const QuestionTo: FunctionComponent<Props> = (props) => {
-  useQuestionTo(props.projectId);
+  useQuestionTo(props.projectId, props.devMode);
 
   if (!props.children) return null;
 
