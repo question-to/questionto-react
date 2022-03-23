@@ -10,7 +10,8 @@ type Props = {
   children?: ReactElement | ((props: object) => ReactElement),
   userId?: string,
   theme?: string,
-  devMode: boolean
+  devMode: boolean,
+  removeBranding?: boolean
 }
 
 //Export main QuestionTo function
@@ -23,7 +24,8 @@ export const QuestionTo: FunctionComponent<Props> = (props) => {
   const childrenProps = {
     "id": "questionto-button",
     "data-questionto-userid": props.userId,
-    "data-questionto-theme": props.theme
+    "data-questionto-theme": props.theme,
+    "data-questionto-removebranding": props.removeBranding === true ? 'true' : 'false' 
   }
 
   //Adds element to dom with new props
